@@ -7,13 +7,13 @@
 
 ## Installation
 
-### Using composer
+### Using composer install
 
-Add packages to composer.json
+Add package to require-dev section of `composer.json` file
 
 ```
 {
-	"require": {
+	"require-dev": {
 		"likai/yii-webserver": "dev-master"
 	}
 }
@@ -46,7 +46,7 @@ return array(
 );
 ```
 
-### Manual
+### Manual install
 
 * Download [yii-webserver.zip](https://github.com/tlikai/yii-webserver/archive/master.zip)
 * Unzip this file
