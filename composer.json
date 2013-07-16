@@ -1,0 +1,18 @@
+{
+    "name": "likai/yii-webserver",
+    "type": "yii-extension",
+    "description": "Yii development web server",
+    "keywords": ["yii", "extension", "webserver"],
+    "homepage": "https://github.com/tlikai/yii-webserver",
+    "license": "New BSD",
+    "authors": [
+        {
+            "name": "likai",
+            "email": "youyuge@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+    },
+    "minimum-stability": "dev"
+}
