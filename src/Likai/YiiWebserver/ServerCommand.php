@@ -1,4 +1,4 @@
-<?php
+<?php namespace Likai\YiiWebserver;
 /**
  * Servercommand class file
  *
@@ -12,7 +12,7 @@
  * @author Likai <youyuge@gmail.com>
  * @since 1.0
  */
-class ServerCommand extends CConsoleCommand
+class ServerCommand extends \CConsoleCommand
 {
     /**
      * @var string host name
@@ -60,7 +60,7 @@ EOD;
 	public function actionIndex($host = null, $port = null, $root = null, $router = null)
 	{
 		if (version_compare(PHP_VERSION, '5.4.0', '<')) {
-			throw new Exception('Require PHP5.4 or later');
+			throw new \Exception('Require PHP5.4 or later');
 		}
 
         $host = $host ?: $this->host;
@@ -71,7 +71,7 @@ EOD;
         $root = realpath($root);
 
         if (!is_dir($root)) {
-            throw new Exception('Document root does not exist.');
+            throw new \Exception('Document root does not exist.');
         }
 
         echo "Yii development server started on http://{$host}:{$port}\n";
