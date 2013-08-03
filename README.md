@@ -1,6 +1,6 @@
 # Yii Development Web Server
 
-## Requires
+## Requirement
 
 * PHP >= 5.4
 * Yii Framework
